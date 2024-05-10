@@ -1,4 +1,4 @@
-# Dynamic Art - Infrastructure
+# Dynamic Art
 
 
 ### AWS Architecture diagram 
