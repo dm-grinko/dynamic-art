@@ -62,8 +62,6 @@ export class AppController {
 
         const faceId = await this.rekognitionService.getFaceId(key);
 
-        
-
         await this.dynamodbUserService.saveFaceId({
           RekognitionID: faceId,
           adminId: adminId,
