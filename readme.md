@@ -1,6 +1,5 @@
 # Dynamic Art - Infrastructure
 
-
 ### AWS Architecture diagram 
 ![alt text](https://raw.githubusercontent.com/dm-grinko/dynamic-art/main/readme.png "aws")
 
