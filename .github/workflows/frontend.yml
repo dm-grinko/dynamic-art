@@ -16,6 +16,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+        with:
+          path: frontend
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
@@ -32,6 +34,7 @@ jobs:
         id: increment-git-tag
         run: |
           bash ./devops/git_update.sh -v patch
+        working-directory: frontend  # Specify the working directory
 
       - name: Build, Tag, and Push the Image to Amazon ECR
         id: build-image
@@ -42,3 +45,4 @@ jobs:
         run: |
           docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+        working-directory: frontend  # Specify the working directory
