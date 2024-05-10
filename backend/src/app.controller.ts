@@ -27,7 +27,6 @@ export class AppController {
     private readonly s3UserService: S3UserService,
     private readonly rekognitionService: RekognitionService,
     private readonly dynamodbUserService: DynamodbUserService,
-    private readonly appGateway: AppGateway,
     private configService: ConfigService,
     private helpers: Helpers
   ) {

@@ -6,11 +6,13 @@ import { RekognitionService } from './services/rekognition.service';
 import { Helpers } from './services/helpers.service';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { AppGateway } from './app.gateway';
+import { S3PictureService } from './services/s3-picture.service';
 
 const services = [
   S3UserService,
   DynamodbUserService,
   RekognitionService,
+  S3PictureService,
   Helpers
 ]
 
