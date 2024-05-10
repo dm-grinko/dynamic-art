@@ -27,12 +27,12 @@ export class AppGateway implements OnGatewayInit, OnGatewayConnection {
     private helpers: Helpers
   ) { }
 
-  // async handleConnection(connection: Socket) {
-    // console.log(`New connection received from ${connection.id}`);
-  // }
+  async handleConnection(connection: Socket) {
+    console.log(`New connection received from ${connection.id}`);
+  }
 
   async afterInit() {
-    // this.server.emit('serverMessage', { message: 'The server is connected!' });
+    this.server.emit('serverMessage', { message: 'The server is connected!' });
   }
 
   @SubscribeMessage('userList')
