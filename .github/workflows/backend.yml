@@ -8,7 +8,7 @@ on:
     paths:
       - backend/**
 jobs:
-  build-test-push:
+  backend-pipeline:
     name: Build, Test, and Push to ECR
     runs-on: ubuntu-latest
     permissions:

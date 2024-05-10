@@ -8,7 +8,7 @@ on:
     paths:
       - frontend/**
 jobs:
-  build-and-push:
+  frontend-pipeline:
     name: Build and Push to ECR
     runs-on: ubuntu-latest
     permissions:

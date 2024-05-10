@@ -19,7 +19,7 @@ export const onCreateCategory = (category: any) => async (dispatch: any) => {
 export const onDeleteCategory = (categoryId: string, adminId: string) => async (dispatch: any) => {
     try {
         const url = `${serverUrl}/api/delete-category`;
-        
+
         const response = await axios.delete(url, {
             data: {
                 categoryId: categoryId,
