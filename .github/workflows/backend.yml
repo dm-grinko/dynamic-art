@@ -43,7 +43,7 @@ jobs:
       - name: Automatic Tagging of Releases
         id: increment-git-tag
         run: |
-          bash ./devops/git_update.sh -v patch
+          bash ./backend/update-version.sh -v patch
         working-directory: backend
 
       - name: Build, Tag, and Push the Image to Amazon ECR
