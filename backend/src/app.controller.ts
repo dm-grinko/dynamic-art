@@ -74,7 +74,6 @@ export class AppController {
 
       // await this.appGateway.sendUserList();
       // Get all users by adminId
-
       const records = await this.dynamodbUserService.getRecords(); // TODO: now we take all users but we need to take by adminId
       return this.helpers.countImagesByPerson(records);
 
