@@ -1,11 +1,12 @@
 ---
 name: FRONTEND
+
 on:
   push:
     branches:
-      - main
+    - main
     paths:
-      - 'frontend/**'
+    - frontend/**
 jobs:
   build-and-push:
     name: Build and Push to ECR

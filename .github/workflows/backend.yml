@@ -3,9 +3,9 @@ name: BACKEND
 on:
   push:
     branches:
-      - main
+    - main
     paths:
-      - 'backend/**'
+    - backend/**
 jobs:
   build-test-push:
     name: Build, Test, and Push to ECR
