@@ -19,6 +19,12 @@ jobs:
         with:
           path: backend
 
+      - name: Debugging: Verify Working Directory and Files
+        run: |
+          pwd
+          ls -la
+        working-directory: backend
+
       - name: Install Dependencies
         run: |
           npm install
