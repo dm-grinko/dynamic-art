@@ -16,13 +16,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-        with:
-          path: backend
 
       - name: Install Dependencies
         run: |
           pwd
           ls -la
+          cd ./backend
           npm install
         working-directory: backend
 
