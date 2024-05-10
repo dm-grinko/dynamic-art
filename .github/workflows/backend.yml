@@ -16,12 +16,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-
-      - name: Verify Working Directory and Files
-        run: |
-          pwd
-          ls -la
-        working-directory: backend
+        with:
+          path: backend
 
       - name: Install Dependencies
         run: |
@@ -47,6 +43,8 @@ jobs:
       - name: Automatic Tagging of Releases
         id: increment-git-tag
         run: |
+          pwd
+          ls -la
           bash ./update-version.sh -v patch
         working-directory: backend
 
