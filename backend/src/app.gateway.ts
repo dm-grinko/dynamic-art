@@ -64,6 +64,7 @@ export class AppGateway implements OnGatewayInit, OnGatewayConnection {
     console.log('deleteUser', user);
   }
 
+
   @SubscribeMessage('screenshot')
   async checkScreenshot(@MessageBody() { adminId, img }: { adminId: string, img: string }): Promise<void> {
     const data = img.replace(/^data:image\/\w+;base64,/, '')
