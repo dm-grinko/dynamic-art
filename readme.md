@@ -16,3 +16,4 @@
 - `terraform state list`
 - `terraform destroy -var-file=variables.tfvars -auto-approve`
 
+test

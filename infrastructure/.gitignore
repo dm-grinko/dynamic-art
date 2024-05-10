@@ -1,0 +1,5 @@
+variables.tfvars
+dist
+.terraform
+.terraform.lock.hcl
+.DS_Store

@@ -1,0 +1,16 @@
+region = "XXXX"
+access_key = "XXXX"
+secret_key = "XXXX"
+client_url = "XXXX"
+server_url = "XXXX"
+frontend_ecr_version = "XXXX"
+backend_ecr_version = "XXXX"
+frontend_desired_count = 1
+backend_desired_count = 1
+certificate_arn = "XXXX"
+dynamodb_category_table = "XXXX"
+dynamodb_picture_table = "XXXX"
+dynamodb_user_table = "XXXX"
+collection_id = "XXXX"
+s3_user_bucket = "XXXX"
+s3_picture_bucket = "XXXX"
