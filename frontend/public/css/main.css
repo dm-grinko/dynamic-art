@@ -1,0 +1,135 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+.modal.add-new-user-modal {
+  display: block;
+  color: #000;
+}
+
+body {
+  background-color: #29577f;
+  /* color: #fff; */
+}
+
+h1{
+  font-size: 5rem;
+}
+
+h5{
+  font-size: 1 rem;
+  color: #263242;
+}
+
+.pictures-nav-btn {
+  margin-right: 10px;
+}
+
+.pictures-user-btn {
+  margin-left: 20px;
+  position: relative;
+  top: 8px;
+}
+
+.center {
+  margin-top: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.users {
+  margin-top: 100px;
+  color: #fff;
+}
+
+.home-page-content {
+  color: #fff;
+}
+
+.pictures-page {
+  color: #fff;
+}
+
+.camera {
+  position: absolute;
+  opacity: 0;
+  z-index: -1000;
+}
+
+.image-gallery-image {
+  border-radius: 10px;
+}
+
+.image-gallery-icon {
+  color: #25567f;
+  filter: none;
+}
+
+.image-gallery-icon:hover {
+  color: #25567f;
+  filter: none;
+}
+
+.image-gallery-content.fullscreen {
+  background: #ffffff;
+}
+
+.form-control:focus {
+  border-color: #ccc;
+  box-shadow: none;
+}
+
+input::file-selector-button {
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  border-radius: 0.375rem;
+  margin-right: 15px;
+}
+
+
+.users-page-users {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.users-page-users li {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+.users-page-users li .card{
+  margin: 0 0 30px 0;
+  padding: 0;
+  border: none;
+}
+
+.form-select:focus {
+  border-color: #ced4da;
+  outline: 0;
+  box-shadow: none;
+}
+
+.images{
+  margin-top: 100px;
+  color: #fff;
+}
+
+.card{
+  margin-bottom: 30px;
+}
+
+.about{
+  color: #fff;
+}
+
+.show{
+  color: #fff;
+}
