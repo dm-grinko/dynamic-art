@@ -22,12 +22,10 @@ jobs:
       - name: Install Dependencies
         run: |
           npm install
-        working-directory: backend
 
       - name: Run Tests
         run: |
           npm run test:cov
-        working-directory: backend
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
@@ -46,7 +44,6 @@ jobs:
           pwd
           ls -la
           bash ./update-version.sh -v patch
-        working-directory: backend
 
       - name: Build, Tag, and Push the Image to Amazon ECR
         id: build-image
@@ -57,4 +54,3 @@ jobs:
         run: |
           docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG ./backend
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
-        working-directory: backend
