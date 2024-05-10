@@ -1,15 +1,15 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { AppController } from './app.controller';
-import { S3Service } from './services/s3-user.service';
-import { DynamodbService } from './services/dynamodb-user.service';
+import { S3UserService } from './services/s3-user.service';
+import { DynamodbUserService } from './services/dynamodb-user.service';
 import { RekognitionService } from './services/rekognition.service';
 import { Helpers } from './services/helpers.service';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { AppGateway } from './app.gateway';
 
 const services = [
-  S3Service,
-  DynamodbService,
+  S3UserService,
+  DynamodbUserService,
   RekognitionService,
   Helpers
 ]
