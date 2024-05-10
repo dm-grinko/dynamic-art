@@ -46,7 +46,6 @@ export const initialUserState: initialUserState = {
     }
 };
 
-
 // ******** ALBUM ********
 export interface picture {
     pictureId: string;
