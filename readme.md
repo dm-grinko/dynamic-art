@@ -15,5 +15,3 @@
 - `terraform apply -var-file=variables.tfvars -auto-approve`
 - `terraform state list`
 - `terraform destroy -var-file=variables.tfvars -auto-approve`
-
-test
