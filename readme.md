@@ -1,6 +1,6 @@
 # Dynamic Art
 
-A dynamic art application that allows administrators to create and manage photo albums, split photos into categories, and assign categories to specific users. Users can then access a personalized photo display through facial recognition technology, enabling them to view their assigned images.
+A dynamic art app that allows administrators to organize photo albums and categorize photos, assigning categories to specific users. Users can access their designated images through a personalized display that utilizes facial recognition technology for a seamless, hands-free experience.
 
 ## Features
 
